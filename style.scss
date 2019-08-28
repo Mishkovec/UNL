@@ -208,3 +208,45 @@ footer {
     height: 2em;
     font-weight: bold;
 }
+
+@media only screen and (max-width: 1366px){
+    header {
+        .menu_top {
+            width: 50%;
+        }
+    }
+    .top_view {
+        .top_view_text {
+            h1 {
+                font-size: 4em;
+            }
+        }
+    }
+    .center_view {
+        h2 {
+            width: $width;
+        }
+        .blocks {
+            width: 90%;
+        }
+    }
+}
+@media only screen and (max-width: 768px){
+    header {
+        justify-content: flex-start;
+        .menu_top, .contact_us {
+            display: none;
+        }
+        .logo {
+            margin-left: 2%;
+        }
+        
+    }
+    
+}
+@media only screen and (max-width: 580px){
+    
+}
+@media only screen and (max-width: 375px){
+    
+}

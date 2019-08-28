@@ -261,4 +261,33 @@ footer .menu_footer {
   height: 2em;
   font-weight: bold;
 }
+
+@media only screen and (max-width: 1366px) {
+  header .menu_top {
+    width: 50%;
+  }
+  .top_view .top_view_text h1 {
+    font-size: 4em;
+  }
+  .center_view h2 {
+    width: 40%;
+  }
+  .center_view .blocks {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  header {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  header .menu_top, header .contact_us {
+    display: none;
+  }
+  header .logo {
+    margin-left: 2%;
+  }
+}
 /*# sourceMappingURL=style.css.map */
