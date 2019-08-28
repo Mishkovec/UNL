@@ -1,0 +1,210 @@
+body {
+    margin:0;
+    padding:0;
+    overflow-x:hidden;
+    background: white;
+    max-width: 1920px;
+    // margin-left: auto;
+    // margin-right: auto;
+}
+$blue_color:#314584;
+$red_color: #FF3946;
+$white:white;
+$width: 40%;
+.menu {
+    display:flex;
+    justify-content:space-between;
+    list-style:none;
+    width: $width;
+    font-weight: bold;
+}
+
+header {
+    display:flex;
+    justify-content:space-around;
+    margin-top: 4%;
+    .logo {
+        width: 10%;
+        height: 2em;
+        background: url('./assets/Logo@1X.png') no-repeat;
+        background-size: contain;
+    }
+    .menu_top {
+        margin-top: 0%;
+        width: 30%;
+        font-size: 1.2em;
+        color: $blue_color;
+    }
+    .contact_us {
+        width: $width /2;
+        font-size: 1.2em;
+        font-weight: bold;
+
+        select {
+            border: none;
+            color: $blue_color;
+            
+        }
+        button {
+            margin-left: 2%;
+            color: $red_color;
+            font-size: 1em;
+            font-weight: bold;
+            height: 3em;            
+            border: none;
+            background: transparent;
+            box-shadow: 0 10px 10px gray; 
+        }
+    }
+
+}
+
+.top_view {
+    display:flex;
+    justify-content: center;
+    padding:  5%;
+    .top_view_text {
+        width: 35%;
+        margin-left: 15%;
+        h1 {
+            color: $blue_color;
+            font-size: 5em;
+        }
+        p {
+            color: #787E83;
+            font-size: 1.2em;
+            padding: 1%;
+        }
+        span {
+            color: $blue_color;
+            font-weight: bold;
+            font-size: 1.2em;
+            margin-left: 5%;
+        }
+        .btn_about_us {
+            width: 35%;
+           height: 3em;  
+           font-size: 1em;         
+        }
+    }
+    .top_view_img {
+        width:$width;
+        height: 40em;
+        background: url('./assets/Vector\ Illustration@1X.png') no-repeat;
+        background-size: contain;
+        margin-left: 8%;
+    }
+
+}
+
+
+.center_view {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2%;
+    h2 {
+        align-self: flex-start;
+        color: $blue_color;
+        font-size: 3em;
+        margin-left: 20%;
+        width: $width /2;
+    }
+    .blocks {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap; 
+        width: $width *2; 
+        margin-top: 3%;  
+        .box {
+            width:371px;
+            height:281px;
+            background:#C3D0D8;
+            margin: 1%;
+            
+        }
+    }
+    p {
+        color: $red_color;
+        font-size: 1em;
+    }
+}
+.form_view {
+    margin-top: 10%;
+    span {
+        color: $red_color;
+        font-weight: bold;
+        margin-left: 20%;
+    }
+    form {
+        display: inline-block;
+        text-align: center;
+        width: 100%;
+        label {
+            font-size: 3em;
+            color: $blue_color;
+            font-weight: bold;
+            margin-left: -40%;
+        }
+        fieldset {
+            border: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;  
+            width: 100%;          
+            input {
+                width: $width;
+                background: #F4FAFE;
+                color: $blue_color;
+                margin: 1%;
+                border: none;
+            }
+            textarea {
+                width: $width *2;
+                background: #F4FAFE; 
+                color: $blue_color;
+                padding: 1%;
+                height: 10em;
+                border: none;
+            }
+            .btn_form {
+                background: $red_color;
+                width: $width /2;
+                color: $white;
+                height: 3em;
+                font-size: 1em;
+            }
+        }
+        
+    }
+}
+
+footer {
+    color: $white;
+    background:$blue_color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    span {
+        margin: 1%;
+    }
+    p {
+        margin: 0;
+    }
+    .creative {
+        color: $red_color;
+        margin: 1%;
+        font-size: 3em;
+    }
+    .menu_footer {
+        width: $width;
+    }
+}
+.btn {
+    border:none;
+    border-radius:4em;
+    color:$white;
+    background:$red_color;
+    height: 2em;
+    font-weight: bold;
+}
