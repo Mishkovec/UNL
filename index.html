@@ -6,6 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>test UNL</title>
     <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" type="text/css" href="./slick-1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="./slick-1.8.1/slick/slick-theme.css"/>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="./slick-1.8.1/slick/slick.min.js"></script> -->
+
+    <!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.9.0/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.9.0/slick/slick-theme.css"/> -->
 </head>
 <body>
     <header>
@@ -23,6 +31,25 @@
             </select>
             <button>Contact Us</button>
         </div>
+        <div class="hamburger_menu">
+                <input id="hamburger" class="hamburger" type="checkbox"/>
+                <label class="hamburger" for="hamburger">
+                  <i></i>
+                  <text>
+                    <close>close</close>
+                    <open>menu</open>
+                  </text>
+                </label>
+                <section class="drawer-list">
+                      <ul>
+                        <li>Home.</li>
+                        <li>About us.</li>
+                        <li>Portfolio.</li>
+                        <li>Blog.</li>
+                        <li>Contact us.</li>
+                    </ul>
+                    </section>
+        </div>
     </header>
     <main>
         <section class='top_view'>
@@ -34,7 +61,11 @@
                     <span>Get in Touch.</span>
                 </div>
             </div>
-            <div class='top_view_img'></div>
+            <div class="single-item">
+                    <div class='top_view_img'></div>
+                    <!-- <div class='top_view_img'></div> -->
+            </div>
+            
         </section>
         <section class ='center_view'>
             <h2>See some of our Creative work.</h2>
@@ -53,10 +84,12 @@
             <form>
                 <label>Get in Touch</label>
                 <fieldset>
-                    <input type='email' value="Your email">
-                    <input type='text' value="Subject">
-                    <textarea>Message here...</textarea>
-                    <input type='submit' class='btn btn_form' value='Send Message'>
+                    <div class="field_block">
+                        <input type='email' value="Your email">
+                        <input type='text' value="Subject">
+                        <textarea>Message here...</textarea>
+                        <input type='submit' class='btn btn_form' value='Send Message'>
+                    </div>                    
                 </fieldset>
             </form>
         </section>
@@ -78,5 +111,7 @@
             <div class='dribble'></div>
         </div>
     </footer>
+    <!-- <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.9.0/slick/slick.min.js"></script> -->
+    <script src="./index.js"></script>
 </body>
 </html>
