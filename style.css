@@ -117,8 +117,8 @@ header .contact_us button {
 }
 
 .top_view .single-item .top_view_img {
-  width: 90%;
-  height: 90%;
+  width: 400px;
+  height: 400px;
   background: url("./assets/Vector Illustration@1X.png") no-repeat;
   background-size: contain;
 }
